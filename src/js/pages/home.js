@@ -5,7 +5,7 @@ import { Context } from "../store/appContext";
 import "../styles/style.css";
 
 export const Home = () => {
-  const { store, actions } = useContext(Context);
+  const { store } = useContext(Context);
   let abc = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
   return (

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 export const ButtonPanel = () => {
-  const { store, actions } = useContext(Context);
+  const { actions } = useContext(Context);
   
 
   return (
