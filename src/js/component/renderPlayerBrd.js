@@ -7,13 +7,13 @@ export const RenderPlayerBoard = (props) => {
   const { store, actions } = useContext(Context);
   let abc = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
-  useEffect(() => {}, [store.playerBoard]);
+  useEffect(() => {}, [store.board]);
 
   return (
-    <div className="container">
-      <table className="table table-bordered">
+    <div className="container ">
+      <table className="table bg-secondary table-bordered">
         <thead>
-          <tr key="trkey">
+          <tr>
             <th scope="col"></th>
             {[...Array(10)].map((_, index) => {
               return (
@@ -25,16 +25,15 @@ export const RenderPlayerBoard = (props) => {
           </tr>
         </thead>
         <tbody>
-          {store.playerBoard.map((i, index) => {
+          {store.board.map((i, index) => {
             return (
-              <tr key={`usrtr${index}`}>
+              <tr>
                 <th scope="row">{abc[index]}</th>
-                {store.playerBoard[index].map((l, lindex) => {
+                {store.board[index].map((l, lindex) => {
                   return (
                     <>
                       <Square
-                        board="user"
-                        value={store.playerBoard[index][lindex]}
+                        value={store.board[index][lindex]}
                         pos={[index, lindex]}
                       />
                     </>
