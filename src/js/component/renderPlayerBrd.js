@@ -4,7 +4,7 @@ import { Context } from "../store/appContext";
 import Square from "./square";
 
 export const RenderPlayerBoard = (props) => {
-  const { store, actions } = useContext(Context);
+  const { store } = useContext(Context);
   let abc = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
   useEffect(() => {}, [store.board]);
@@ -15,10 +15,10 @@ export const RenderPlayerBoard = (props) => {
         <thead>
           <tr>
             <th scope="col"></th>
-            {[...Array(10)].map((_, index) => {
+            {[...Array(10)].map((_, zindex) => {
               return (
-                <th scope="col" key={`th${index}`}>
-                  {index + 1}
+                <th scope="col" key={`z${zindex}`}>
+                  {zindex + 1}
                 </th>
               );
             })}
@@ -27,16 +27,15 @@ export const RenderPlayerBoard = (props) => {
         <tbody>
           {store.board.map((i, index) => {
             return (
-              <tr>
-                <th scope="row">{abc[index]}</th>
+              <tr key={index}>
+                <th key={`b${index}`} scope="row">{abc[index]}</th>
                 {store.board[index].map((l, lindex) => {
                   return (
-                    <>
                       <Square
+                        key={`c${lindex}`}
                         value={store.board[index][lindex]}
                         pos={[index, lindex]}
                       />
-                    </>
                   );
                 })}
               </tr>

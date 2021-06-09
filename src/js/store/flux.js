@@ -129,7 +129,9 @@ const getState = ({ getStore, getActions, setStore }) => {
           getStore().board[index].map((thing, thindex) => {
             if(getStore().board[index][thindex]===0||getStore().board[index][thindex]===3||getStore().board[index][thindex]===2)
             successCounter+=1;
+            return true;
           });
+          return true;
         });
         if (successCounter===100)
         setStore({victory: true});
@@ -140,7 +142,9 @@ const getState = ({ getStore, getActions, setStore }) => {
           getStore().board[a].map((element,b) => {
             if(element===4||element===5||element===6||element===7||element===8)
             aux[a][b]=10;
+            return true;
           });
+          return true;
         });
         setStore({board:aux});
       },
@@ -234,6 +238,8 @@ const getState = ({ getStore, getActions, setStore }) => {
                 })
               );
             return false;
+            default:
+              console.log("error on sunkenCheck");
         }
       },
     },

@@ -6,12 +6,14 @@ export const Square = (props) => {
   const [squared, setSquare]= useState(props.value);
 
   useEffect(()=>{
-      setSquare(store.board[props.pos[0]][props.pos[1]]);
+    let aux=store.board[props.pos[0]][props.pos[1]];
+    setSquare(aux);
 
-  });
+  },[store.board,props.pos]);
   return (
     <>
-      <td
+      <td 
+      key={`${Math.random()}`}
         className={squared=== 1
             ? "bg-warning border border-4 border-danger"
             : squared === 2
