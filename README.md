@@ -17,8 +17,10 @@ To play this game you should have installed npm and nodejs. To be sure that you 
 
 and if everithing it's correct, you must see each one version.
 if you can't see version or there ir any error, i recommend you to visit the following sites to install it:
-[NodeJS](http://nodejs.org)
-[npm](http://www.npmjs.com)
+
+NodeJS: [http://nodejs.org](http://nodejs.org)
+
+NPM: [http://www.npmjs.com](http://www.npmjs.com)
 
 ## Running the app
 
