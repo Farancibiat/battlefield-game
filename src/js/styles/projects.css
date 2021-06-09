@@ -1,0 +1,34 @@
+.styledCard{
+    margin-top:20px;
+    background-color: rgb(47, 44, 61);
+    padding: 15px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.styledCard h4{
+    color: #d9534f;
+}
+.styledCard p{
+    font-style: italic;
+    text-align: justify;
+    color: rgb(161, 161, 161);
+}
+
+.styledCard a button{
+    background: none;
+    border: none;
+    color: #ffc107;
+}
+.styledCard .btn2{
+    background: none;
+    border: none;
+    color: #f7f7f7;
+}
+
+.styledCard button:hover, .styledCard button .btn2:hover{
+    background: none;
+    border: none;
+    color: #d9534f;
+}

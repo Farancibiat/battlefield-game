@@ -1,0 +1,110 @@
+.sideBar {
+  position:absolute;
+  background-color: rgb(41, 43, 44, 9);
+  border-radius: 10px;
+  padding: 0%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom-left-radius: 6px ;
+  border-bottom-right-radius: 6px;
+  /* border: 1px solid #ffc107; */
+}
+
+.topSideBar{
+    background-color: rgb(71, 70, 70);
+    padding: 0%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* border-bottom: 1px solid #ffc107; */
+}
+    
+
+.prof-foto {
+  background-color: rgba(88, 86, 86, 0.932);
+  background-image: url(../../img/imagen-perfil-sm2.png);
+  background-position: 50% 110%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 0, 0,0.3);
+    border: 5px solid #ffc107;
+}
+.circleText{
+    padding-top: 13px;
+}
+
+.sbli{
+  margin-bottom:2px;
+  align-content: flex-start;
+}
+.cv{
+  background-color: #d9534f;
+  background-image: url(../../img/cv-icon.png);
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 3px solid #ffc107;
+  width:50px;
+  height: 50px;
+}
+.contentSideBar{
+  height:300px; 
+  overflow-y: scroll;
+  overflow-x: hidden ;
+}
+.botSideBar{
+    background-color: rgb(71, 70, 70);
+    padding: 0%;
+    border-bottom-left-radius: 6px ;
+    border-bottom-right-radius: 6px;
+    margin-top: 0%;
+    /* border-top: 1px solid #ffc107;*/
+} 
+a {
+  color:#f7f7f7 !important;
+  text-align: center;
+  
+
+}
+a:hover{
+  color:#d9534f !important;
+
+}
+
+body *::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+ }
+body *::-webkit-scrollbar-thumb {
+  background: #bd8f06;
+  border-radius: 15px;
+ }
+body *::-webkit-scrollbar-thumb:hover{
+  background: #d9534f;
+ }
+ body *::-webkit-scrollbar-track{
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: inset 7px 10px 12px #f0f0f0;
+ }
+ .bodyFrame {
+  background-color: #212529;
+  border-radius: 10px;
+  margin: 15px 0px 15px 0px;
+  margin-bottom: 15px;
+  height: 616px;
+}
+
+.contentScroller{
+  height:559px; 
+  overflow-y: auto;
+  overflow-x: hidden ;
+}
+

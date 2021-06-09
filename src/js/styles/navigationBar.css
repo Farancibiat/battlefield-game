@@ -1,0 +1,49 @@
+a:hover {
+  text-decoration: none !important;
+}
+.navigationBar {
+  opacity: 0.9;
+  border-radius: 10px;
+  background-color: rgb(47, 44, 61);
+  /* border: 1px solid #ffc107; */
+}
+
+
+.brandImage {
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 15px;
+}
+
+.brandImage:hover {
+  width: 50px !important;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+.brandText {
+  color: #ffc107;
+}
+.brandText:hover {
+  color: rgb(226, 27, 27);
+}
+
+.navigationText {
+  color: rgb(136, 136, 136) !important;
+  text-decoration: none !important;
+  margin-right: 5px;
+}
+.navigationText:hover,
+.navigationText:active {
+  color: #ffc107 !important;
+  text-decoration: none !important;
+  font-size: large;
+}
+
+#cardTitle{
+  font-size: 1.3rem;
+  padding-left: 0%;
+  color: #f7f7f7;
+}
