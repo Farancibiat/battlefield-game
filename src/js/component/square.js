@@ -6,24 +6,23 @@ export const Square = (props) => {
   const [squared, setSquare]= useState(props.value);
 
   useEffect(()=>{
-    if (props.board==="cpu")
-    setSquare(store.computerBoard[props.pos[0]][props.pos[1]]);
-    else
-      setSquare(store.playerBoard[props.pos[0]][props.pos[1]]);
+      setSquare(store.board[props.pos[0]][props.pos[1]]);
 
   });
   return (
     <>
       <td
-        className={squared=== 2
+        className={squared=== 1
             ? "bg-warning border border-4 border-danger"
-            : squared === 3
+            : squared === 2
             ? "bg-secondary"
-            : squared === 4
+            : squared === 3
             ? "bg-danger"
-            : "bg-info"
+            : squared === 10
+            ? "border border-4 border-warning bg-light"
+            :"bg-info"
         }
-        onClick={props.board==="cpu"?() => {actions.playerFire(props.pos[0], props.pos[1])}:null}
+        onClick={() => {actions.playerFire(props.pos[0], props.pos[1])}}
       ></td>
     </>
   );
