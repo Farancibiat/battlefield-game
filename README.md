@@ -1,4 +1,5 @@
 # Let's play Battlefield
+![battlefield-alt-tag](https://github.com/Farancibiat/battlefield-game/blob/main/src/img/capture.png?raw=true)
 
 ## About the game
 Battlefield it's the classic game where you can imagine a terrific naval war just seeing a simple table board.
