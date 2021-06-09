@@ -8,6 +8,10 @@ Playing it's simple, you just have to click on the board and check the color in 
 
 We challenge you to be as efficient as you can, try to do it on minimum shoots (16 shoots it's the mininum possible).
 
+## Play online
+
+If you just want to play, you can visit [Battleship-Online](http://farancibiat-battleship.herokuapp.com/), and if you preffer to install it on your computer, follow this instructions:
+
 ## Install instructions
 
 To play this game you should have installed npm and nodejs. To be sure that you have it, you must run the following commands on your terminal:
