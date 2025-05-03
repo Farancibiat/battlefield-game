@@ -1,11 +1,11 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import Home from "./pages/home";
 import injectContext from "./store/appContext";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 //create your first component
 const Layout = () => {
@@ -16,11 +16,9 @@ const Layout = () => {
   return (
     <BrowserRouter basename={basename}>
       <ScrollToTop>
-                <Switch>
-                  <Route exact path="/">
-                    <Home />
-                  </Route>
-                </Switch>
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                </Routes>
                 
       </ScrollToTop>
     </BrowserRouter>
